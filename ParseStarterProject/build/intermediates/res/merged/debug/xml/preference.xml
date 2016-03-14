@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="Load high resolution image"
+        android:key="shouldLoadHigh"
+        android:defaultValue="false"/>
+</PreferenceScreen><!-- From: file:/Users/ifta/Downloads/Parse-Starter-Project-1.10.2/ParseStarterProject/src/main/res/xml/preference.xml -->

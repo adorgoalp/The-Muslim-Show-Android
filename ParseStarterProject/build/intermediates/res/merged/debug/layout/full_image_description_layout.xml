@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="Title"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:editable="false"
+        android:elevation="2dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/loadingPanel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminate="true" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/progressBar"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/progressBar"
+                        android:text="Loading..."
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/ivFullImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true" />
+
+            <TextView
+                android:id="@+id/tvTextAboutPicture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text=""
+                android:textColor="#000000"
+                android:visibility="invisible" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:id="@+id/llFav">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add to favorite"
+                    android:id="@+id/tvAddToFavorite"
+                    android:layout_marginLeft="16dp"
+                    android:textStyle="italic" />
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="32dp"
+                    android:id="@+id/ibAddtoFavorite"
+                    android:background="@drawable/nfav" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/ifta/Downloads/Parse-Starter-Project-1.10.2/ParseStarterProject/src/main/res/layout/full_image_description_layout.xml -->
